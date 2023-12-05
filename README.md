@@ -38,14 +38,15 @@ npm install
 
 -   Run the development server:
 
-``bash
+```bash
 npm run dev
-
 ```
+
 > Open your browser:
 > Open http://localhost:3000 to view the website.
 
 ## Contributing
+
 Contributions are welcome! If you'd like to contribute to Dragon News, please follow these steps:
 
 Fork the repository
@@ -54,4 +55,3 @@ Make your changes
 Commit your changes (git commit -m 'Add awesome feature')
 Push to the branch (git push origin feature/awesome-feature)
 Create a pull request
-```
