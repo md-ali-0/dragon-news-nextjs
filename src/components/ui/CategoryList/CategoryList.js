@@ -4,7 +4,6 @@ import Link from "next/link";
 
 const CategoryList = async () => {
     const {data:allCategories} = await getAllCategories()
-    console.log(allCategories);
     return (
         <Box className='mt-5 bg-gray-100 px-5 py-2'>
             <Typography variant="h6">Category List</Typography>

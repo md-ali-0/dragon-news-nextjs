@@ -1,15 +1,14 @@
 import {
     Box,
-    ButtonBase,
     Card,
     CardActionArea,
     CardContent,
     CardMedia,
-    Grid,
-    Typography,
+    Typography
 } from "@mui/material";
 import Image from "next/image";
 import topNews from "../../../assets/Rectangle 8.png";
+import SidebarNewsCard from "./SidebarNewsCard";
 
 const Sidebar = () => {
     return (
@@ -36,18 +35,14 @@ const Sidebar = () => {
                     </CardContent>
                 </CardActionArea>
             </Card>
-            <Grid container spacing={2}>
-                <Grid item xs={4}>
-                    <ButtonBase sx={{ width: 128, height: 128 }}>
-                        <Image src={topNews} alt="" />
-                    </ButtonBase>
-                </Grid>
-                <Grid item xs={8}>
-                    <Typography variant="body2" gutterBottom>
-                        Bitcoin Climbs as Elon Musk Says Tesla Likely to Accept it
-                    </Typography>
-                </Grid>
-            </Grid>
+            <Box className="py-5">
+                <SidebarNewsCard />
+                <SidebarNewsCard />
+                <SidebarNewsCard />
+                <SidebarNewsCard />
+                <SidebarNewsCard />
+                <SidebarNewsCard />
+            </Box>
         </Box>
     );
 };

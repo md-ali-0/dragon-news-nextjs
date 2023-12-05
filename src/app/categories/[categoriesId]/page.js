@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const DynamicNewsPage = async ({ params, searchParams }) => {
     const { data: categoryPosts } = await getCategoryNews(searchParams.category);
-    console.log(categoryPosts);
     return (
         <div>
             <Grid className="mt-5" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
